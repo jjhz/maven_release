@@ -3,7 +3,7 @@
 
   <groupId>com.jiang</groupId>
   <artifactId>release</artifactId>
-  <version>1.1</version>
+  <version>1.2-SNAPSHOT</version>
   <packaging>jar</packaging>
 
   <name>release</name>
@@ -25,7 +25,7 @@
 
   <scm>
     <connection>scm:git:git@github.com:jjhz/maven_release.git</connection>
-    <tag>release-1.1</tag>
+    <tag>release-1.0</tag>
   </scm>
 
   <properties>
