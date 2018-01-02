@@ -10,6 +10,24 @@
   <name>release</name>
   <url>http://maven.apache.org</url>
 
+  <distributionManagement>
+
+    <repository>
+      <id>release-repo</id>
+      <url>file:///Users/jamesjiang/Desktop/maven_release/release</url>
+    </repository>
+
+    <snapshotRepository>
+      <id>ss-repo</id>
+      <url>file:///Users/jamesjiang/Desktop/maven_release/snapshot</url>
+    </snapshotRepository>
+
+  </distributionManagement>
+
+  <scm>
+    <connection>scm:git:git@github.com:jjhz/maven_release.git</connection>
+  </scm>
+
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
@@ -22,4 +40,14 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-release-plugin</artifactId>
+        <version>2.5.3</version>
+      </plugin>
+    </plugins>
+  </build>
 </project>
